@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <title>USC Sample App</title>
   <head>
    
     <%= csrf_meta_tags %>
@@ -12,16 +13,18 @@
     <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+    <header class="navbar navbar-fixed-top navbar-inverse" id = "navOne">
       <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
-        <nav>
+      <%= link_to image_tag("usclogo.png", alt: "USC logo"),
+            'http://www.usc.edu.ph/' %>
+       <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home",   '#' %></li>
             <li><%= link_to "Help",   '#' %></li>
             <li><%= link_to "Log in", '#' %></li>
           </ul>
         </nav>
+
       </div>
     </header>
     <div class="container">
